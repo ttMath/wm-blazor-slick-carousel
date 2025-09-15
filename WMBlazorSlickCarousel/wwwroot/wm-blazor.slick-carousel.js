@@ -104,7 +104,7 @@ function WMBSCLoadScript(src, id, callback, element, configurations, configCallb
 function WMBSCRunInitAsync(element, callback, configurations, configCallbacks) {
     var timer;
     try {
-        callback(element, configurations);
+        callback(element, configurations, configCallbacks);
     } catch (error) {
         timer = setInterval(() => {
             try {
